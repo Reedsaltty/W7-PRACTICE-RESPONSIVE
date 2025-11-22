@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    padding : 20px;
+}
+.logo {
+    flex-direction: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 3rem;
+}
+.menu-icon{
+    display: none;
+    font-size: 40px;
+}
+@media (max-width : 768px ) {
+    .nav {
+        display: none;
+    }
+    .menu-icon{
+        display:block;
+        font-size: 40px;
+    }
+    
+}
