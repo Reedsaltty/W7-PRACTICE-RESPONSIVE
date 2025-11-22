@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+.grid {
+    display : grid ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px  
+}
+.item {
+    background-color: rgb(119, 197, 197);
+    text-align: center;
+    max-width : 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+ @media (max-width : 768px ){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 100px  
+    }
+
+ }
+ @media (max-width : 414px ){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 100px  ;
+    }
+
+ }
